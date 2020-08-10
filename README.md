@@ -30,3 +30,22 @@
 
 
 ## Результат:
+
+> Исходный интерфейс представлен на скриншоте ниже:
+
+![Скриншот интерфейса](https://github.com/Bal4ss/Parse_Urals/blob/master/Interface/MainWindow.png)
+
+> Контактная информация также отображается на странице: 
+
+![Скриншот интерфейса](https://github.com/Bal4ss/Parse_Urals/blob/master/Interface/Contacts.png)
+
+
+## Инструменты используемые в ходе работы
+
+* MS Visual Studio 2019
+* MS Visual Studio Code
+* C#
+* ASP.NET Core 3.1 Web Api
+* Vue.js
+* Sass
+* Axios
