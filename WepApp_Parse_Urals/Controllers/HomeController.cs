@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WepApp_Parse_Urals.Controllers
+namespace WebApp_Parse_Urals.Controllers
 {
     public class HomeController : Controller
     {

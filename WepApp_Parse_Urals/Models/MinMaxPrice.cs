@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace WepApp_Parse_Urals.Models
+namespace WebApp_Parse_Urals.Models
 {
     /// <summary>
     /// Модель с максимальным и минимальным значением выборки

@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WepApp_Parse_Urals
+namespace WebApp_Parse_Urals
 {
     public class Program
     {

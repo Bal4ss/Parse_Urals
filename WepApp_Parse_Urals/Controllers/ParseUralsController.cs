@@ -5,9 +5,9 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using WepApp_Parse_Urals.Models;
+using WebApp_Parse_Urals.Models;
 
-namespace WepApp_Parse_Urals.Controllers
+namespace WebApp_Parse_Urals.Controllers
 {
     [Route("api/parse")]
     [ApiController]

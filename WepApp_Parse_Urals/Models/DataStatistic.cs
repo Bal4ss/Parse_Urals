@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WepApp_Parse_Urals.Models
+namespace WebApp_Parse_Urals.Models
 {
     /// <summary>
     /// Модель статистики по выборке
