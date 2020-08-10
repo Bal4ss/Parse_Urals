@@ -46,8 +46,8 @@
         </div>
         <div class="search">
             <span class="search-title">Статистика по загруженным данным</span>
+            <a v-on:click="getStat">Найти</a>
             <div>
-                <a v-on:click="getStat" style="margin: 10px">Обновить</a>
                 <p>
                     Количество записей в выборке: <strong>{{getStatCount}}</strong><br />
                     Минимальное значение цены и дата старта: <strong>{{getStatMinMax.min}}</strong> - <strong>{{getStatMinDate}}</strong><br />

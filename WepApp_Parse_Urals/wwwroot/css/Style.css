@@ -34,10 +34,10 @@ ul {
 body {
   position: relative;
   font-family: sans-serif;
-  background-color: #B0B0B0;
+  background-color: #3A3042;
   line-height: 1.3em;
   font-size: 1em;
-  color: #130303;
+  color: #EDFFD9;
   min-height: 100vh;
 }
 
@@ -59,8 +59,8 @@ body {
 
 /*Header Properties*/
 header {
-  background-color: #A81C1B;
-  color: #130303;
+  background-color: #DB9D47;
+  color: #EDFFD9;
   height: 100px;
 }
 
@@ -78,8 +78,8 @@ header ul a {
 }
 
 header ul a.active, header ul a:hover {
-  color: #A81C1B;
-  background-color: #B0B0B0;
+  color: #DB9D47;
+  background-color: #3A3042;
 }
 
 /*Main Properties*/
@@ -92,45 +92,71 @@ main #SearchBlock {
 }
 
 main #SearchBlock .search {
+  position: relative;
   margin: 25px auto;
   max-width: 600px;
   width: 100%;
   padding: 15px 10px;
-  border: 2px solid #130303;
+  border: 1px solid #FF784F;
+  border-radius: 15px;
 }
 
 main #SearchBlock .search .search-title {
-  font-weight: bold;
+  font-weight: normal;
+  color: #DB9D47;
 }
 
 main #SearchBlock .search a {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   display: inline-block;
-  cursor: pointer;
   margin-left: 5px;
   padding: 5px 10px;
-  background-color: #A81C1B;
-  color: #130303;
+  border: 1px solid #FF784F;
+  background-color: #DB9D47;
+  color: #EDFFD9;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
 
 main #SearchBlock .search a:hover {
-  background-color: #7c1514;
-  color: #B0B0B0;
+  background-color: #c88527;
+  color: #3A3042;
 }
 
 main #SearchBlock .search input[type="date"] {
-  background-color: #B0B0B0;
-  border-bottom: 2px solid #130303;
+  background-color: #3A3042;
+  border-bottom: 2px solid #EDFFD9;
+  color: #EDFFD9;
 }
 
-main p.contact {
-    cursor: default;
+main .contact-block {
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-main p.contact a{
-    cursor: pointer;
-    text-decoration: underline;
+main .contact-block p {
+  text-align: center;
+}
+
+main .contact-block p a {
+  text-decoration: underline;
+  color: #FF784F;
 }
 
 /*Footer Properties*/
@@ -139,8 +165,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #130303;
-  color: #A81C1B;
+  color: #DB9D47;
   height: 100px;
 }
 
@@ -170,7 +195,7 @@ footer div a::after {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: #A81C1B;
+  background-color: #DB9D47;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
