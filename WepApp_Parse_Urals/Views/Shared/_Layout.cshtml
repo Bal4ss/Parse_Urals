@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="~/css/Style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="flexCenter">
+                <li><a class="@ViewData["ActiveMain"]" asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                <li><a class="@ViewData["ActiveContact"]"  asp-area="" asp-controller="Home" asp-action="Contact">Контакты</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <div class="container">
+            <p>Created by <a href="https://vk.com/gm_balass">@@Bakunin</a><br>Email: <a href="mailto:wwwnikita18@gmail.com">wwwnikita18@gmail.com</a></p>
+        </div>
+    </footer>
+    <script src="~/js/js.js"></script>
+</body>
+</html>

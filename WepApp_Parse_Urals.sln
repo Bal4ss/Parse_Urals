@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WepApp_Parse_Urals", "WepApp_Parse_Urals\WepApp_Parse_Urals.csproj", "{4E064894-5E1B-4717-BAF2-42E6AB8CF211}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E064894-5E1B-4717-BAF2-42E6AB8CF211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E064894-5E1B-4717-BAF2-42E6AB8CF211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E064894-5E1B-4717-BAF2-42E6AB8CF211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E064894-5E1B-4717-BAF2-42E6AB8CF211}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70B2D53D-FEFA-448F-967E-1ACA097EB557}
+	EndGlobalSection
+EndGlobal

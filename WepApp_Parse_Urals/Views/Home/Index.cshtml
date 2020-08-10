@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Глвная - WepApp_Parse_Urals";
+    ViewData["ActiveMain"] = "active";
+}
+
+<div class="container">
+    <div id="SearchBlock">
+        <div class="search">
+            <span class="search-title">Цена на заданную дату</span>
+            <div>
+                <span>Дата для поиска: </span>
+                <input type="date" name="getPriceFromDate_date" v-model="getPriceFromDateValue">
+                <a v-on:click="getPriceFromDateFunc">Найти</a>
+                <p>
+                    Результат: <strong>{{getPriceFromDateResult}}</strong>
+</p>
+            </div>
+        </div>
+        <div class="search">
+            <span class="search-title">Средняя цена за промежуток времени</span>
+            <div>
+                <span>Даты для поиска: </span>
+                <input type="date" name="getAvgPriceFromDateToDate_fromDate" v-model="getAvgPriceFromDateValue">
+                <input type="date" name="getAvgPriceFromDateToDate_toDate" v-model="getAvgPriceToDateValue">
+                <a v-on:click="getAvgPriceFromDateToDate">Найти</a>
+                <p>
+                    Результат: <strong>{{getAvgPriceFromDateToDateResult}}</strong>
+                </p>
+            </div>
+        </div>
+        <div class="search">
+            <span class="search-title">Максимальная и минимальная цены за промежуток времени</span>
+            <div>
+                <span>Даты для поиска: </span>
+                <input type="date" name="GetMinMaxPriceFromDateToDate_fromDate" v-model="getMinMaxPriceFromDateValue">
+                <input type="date" name="GetMinMaxPriceFromDateToDate_toDate" v-model="GetMinMaxPriceToDateValue">
+                <a v-on:click="getMinMaxPriceFromDateToDate">Найти</a>
+                <p>
+                    Результат:
+                    <div style="margin-left: 15px">
+                        <strong>min: {{GetMinMaxPriceFromDateToDateResult.min}}</strong><br />
+                        <strong>max: {{GetMinMaxPriceFromDateToDateResult.max}}</strong>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="search">
+            <span class="search-title">Статистика по загруженным данным</span>
+            <div>
+                <a v-on:click="getStat" style="margin: 10px">Обновить</a>
+                <p>
+                    Количество записей в выборке: <strong>{{getStatCount}}</strong><br />
+                    Минимальное значение цены и дата старта: <strong>{{getStatMinMax.min}}</strong> - <strong>{{getStatMinDate}}</strong><br />
+                    Максимальное значение цены и дата старта: <strong>{{getStatMinMax.max}}</strong> - <strong>{{getStatMaxDate}}</strong><br />
+                    Среднее значение цены по всей выборке: <strong>{{getStatAvg}}</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

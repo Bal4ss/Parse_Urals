@@ -1,0 +1,33 @@
+2020-08-10T15:41:30.4588291+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-08-10T15:41:30.4738585+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-08-10T15:41:30.4741388+05:00  [INF] Content root path: "C:\Users\user\source\repos\WepApp_Parse_Urals\WepApp_Parse_Urals" (b5d60022)
+2020-08-10T15:41:32.5233799+05:00 800000ef-0000-ff00-b63f-84710c7967bb [INF] 10.08.2020 15:41:32 - 
+Complete time: 1310,0069ms; 
+Request path: /api/parse/GetStat;  (3c7c8f55)
+2020-08-10T15:41:39.9633059+05:00 8000013a-0002-ff00-b63f-84710c7967bb [INF] 10.08.2020 15:41:39 - 
+Complete time: 867,8592ms; 
+Request path: /api/parse/GetStat;  (db165c2d)
+2020-08-10T15:41:42.5586226+05:00 800000a8-0001-fd00-b63f-84710c7967bb [INF] 10.08.2020 15:41:42 - 
+Complete time: 882,0766ms; 
+Request path: /api/parse/GetStat;  (a86647f6)
+2020-08-10T15:41:44.3499946+05:00 80000026-0003-fd00-b63f-84710c7967bb [INF] 10.08.2020 15:41:44 - 
+Complete time: 844,5991ms; 
+Request path: /api/parse/GetStat;  (7871cf9b)
+2020-08-10T15:41:47.6572406+05:00 8000013e-0002-ff00-b63f-84710c7967bb [INF] 10.08.2020 15:41:47 - 
+Complete time: 1129,2697ms; 
+Request path: /api/parse/GetStat;  (a7c15551)
+2020-08-10T15:41:50.9029011+05:00 80000028-0003-fd00-b63f-84710c7967bb [INF] 10.08.2020 15:41:50 - 
+Complete time: 2491,9673ms; 
+Request path: /api/parse/GetStat;  (4c643ba2)
+2020-08-10T15:41:52.6549076+05:00 80000142-0002-ff00-b63f-84710c7967bb [INF] 10.08.2020 15:41:52 - 
+Complete time: 1028,617ms; 
+Request path: /api/parse/GetStat;  (94fc62a0)
+2020-08-10T15:41:55.5909200+05:00 800000ae-0001-fd00-b63f-84710c7967bb [INF] 10.08.2020 15:41:55 - 
+Complete time: 902,9304ms; 
+Request path: /api/parse/GetStat;  (a4860ec4)
+2020-08-10T15:41:57.4286429+05:00 8000002a-0003-fd00-b63f-84710c7967bb [INF] 10.08.2020 15:41:57 - 
+Complete time: 861,5873ms; 
+Request path: /api/parse/GetStat;  (25955bc9)
+2020-08-10T15:41:58.5411677+05:00 80000144-0002-ff00-b63f-84710c7967bb [INF] 10.08.2020 15:41:58 - 
+Complete time: 844,3815ms; 
+Request path: /api/parse/GetStat;  (d9da3ae6)

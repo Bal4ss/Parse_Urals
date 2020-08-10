@@ -1,0 +1,183 @@
+﻿/* Default Properties */
+*,
+*::after,
+*::before {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Body Properties*/
+body {
+  position: relative;
+  font-family: sans-serif;
+  background-color: #B0B0B0;
+  line-height: 1.3em;
+  font-size: 1em;
+  color: #130303;
+  min-height: 100vh;
+}
+
+.flexCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*Header Properties*/
+header {
+  background-color: #A81C1B;
+  color: #130303;
+  height: 100px;
+}
+
+header ul {
+  height: 100px;
+}
+
+header ul a {
+  display: block;
+  position: relative;
+  font-weight: bold;
+  padding: 8px 15px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+header ul a.active, header ul a:hover {
+  color: #A81C1B;
+  background-color: #B0B0B0;
+}
+
+/*Main Properties*/
+main {
+  padding-bottom: 100px;
+}
+
+main #SearchBlock {
+  padding: 25px 0;
+}
+
+main #SearchBlock .search {
+  margin: 25px auto;
+  max-width: 600px;
+  width: 100%;
+  padding: 15px 10px;
+  border: 2px solid #130303;
+}
+
+main #SearchBlock .search .search-title {
+  font-weight: bold;
+}
+
+main #SearchBlock .search a {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #A81C1B;
+  color: #130303;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+main #SearchBlock .search a:hover {
+  background-color: #7c1514;
+  color: #B0B0B0;
+}
+
+main #SearchBlock .search input[type="date"] {
+  background-color: #B0B0B0;
+  border-bottom: 2px solid #130303;
+}
+
+main p.contact {
+    cursor: default;
+}
+
+main p.contact a{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Footer Properties*/
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #130303;
+  color: #A81C1B;
+  height: 100px;
+}
+
+footer div {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div a {
+  display: inline-block;
+  position: relative;
+}
+
+footer div a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #A81C1B;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+footer div a:hover::after {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
