@@ -1,0 +1,5 @@
+2020-08-18T16:40:04.8348786+05:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2020-08-18T16:40:04.8450952+05:00  [INF] Hosting environment: "Development" (c3307c92)
+2020-08-18T16:40:04.8452774+05:00  [INF] Content root path: "C:\Users\user\Source\Repos\Parse_Urals\WepApp_Parse_Urals" (b5d60022)
+2020-08-18T16:40:07.6009026+05:00 8000001e-0002-ff00-b63f-84710c7967bb [INF] 18.08.2020 16:40:07 - RequestID: 8aebe5cb-8356-4954-b177-583afe89da5e; Complete time: 2342,2715ms; Request path: /api/parse/GetStat;  (56fc0ce5)
+2020-08-18T16:40:10.8988691+05:00 80000020-0002-ff00-b63f-84710c7967bb [INF] 18.08.2020 16:40:10 - RequestID: 07c6fd01-cd8a-491e-aac4-ea6275ebb04f; Complete time: 0,0268ms; Request path: /api/parse/GetLog;  (3d5ef4b6)
