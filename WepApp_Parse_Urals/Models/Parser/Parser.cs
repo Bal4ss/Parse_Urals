@@ -9,7 +9,7 @@ namespace WebApp_Parse_Urals.Models.Parser
     public class Parser
     {
         /// <summary>
-        /// Актуальная ссылка на данные
+        /// Актуальная ссылка на данные 
         /// </summary>
         public static string ActualLink { get { return GetLink().Result; } }
 
