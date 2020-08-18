@@ -25,20 +25,19 @@ namespace WebApp_Parse_Urals.Models.Parser
         private static async Task<string> GetLink()
         {
             //Получаем насройки парсера
-            var parInfo = new ParserSettings();
-            var tmp = parInfo.SearchURL;
-            int index = tmp.IndexOf(parInfo.TypeOfSearch);
+            var tmp = ParserOptions.URL;
+            int index = tmp.IndexOf(ParserOptions.Type);
             if (index == -1) return null;//Проверяем корректность ссылки
 
             //Формирование ссылки на все версии
             var urlTmp = tmp.Substring(0, index);
-            urlTmp += $"api/dataset/{tmp.Substring(index + parInfo.TypeOfSearch.Length + 1)}/version";
+            urlTmp += $"api/dataset/{tmp.Substring(index + ParserOptions.Type.Length + 1)}/version";
 
             //Получение актуальной версии
-            var version = await new HttpClient().GetStringAsync(urlTmp + parInfo.Token);
+            var version = await new HttpClient().GetStringAsync(urlTmp + ParserOptions.Token);
             version = version.Split('\n').Take(3).Last().Trim().Split(':').Last().Trim().Replace("\"", null);
 
-            return urlTmp + $"/{version}/content{parInfo.Token}";
+            return urlTmp + $"/{version}/content{ParserOptions.Token}";
         }
 
         /// <summary>

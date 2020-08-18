@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using WebApp_Parse_Urals.Models;
 using WebApp_Parse_Urals.Models.Logger;
@@ -19,10 +20,14 @@ namespace WebApp_Parse_Urals.Controllers
         /// <summary>
         /// Конструктор контроллера
         /// </summary>
-        /// <param name="logger"></param>
-        public ParseUralsController(ILogger<ParseUralsController> logger)
+        /// <param name="logger">Логгер</param>
+        /// <param name="config">Настройки проекта</param>
+        public ParseUralsController(ILogger<ParseUralsController> logger, IConfiguration config)
         {
             _logger = new CustLog(logger);
+            ParserOptions.URL = config.GetValue<string>("ParserOptions:URL");
+            ParserOptions.Type = config.GetValue<string>("ParserOptions:Type");
+            ParserOptions.Token = config.GetValue<string>("ParserOptions:Token");
         }
 
         /// <summary>
